@@ -1,0 +1,47 @@
+-
+  var myFullName = 'Timotei Dumitru'
+  var myJobTitle = 'Self-Taught Person'
+  var socialList = [
+    {
+      "icon": "facebook2",
+       "url": "https://facebook.com"
+    },
+    {
+      "icon": "twitter",
+       "url": "https://twitter.com"
+    },
+    {
+      "icon": "google-plus2",
+       "url": "https://googleplus.com"
+    },
+    {
+      "icon": "youtube",
+       "url": "https://youtube.com"
+    },
+    {
+      "icon": "linkedin",
+       "url": "https://linkedin.com"
+    },
+    {
+      "icon": "stackoverflow",
+       "url": "https://youtube.com"
+    },
+    {
+      "icon": "github",
+       "url": "https://github.com"
+    },
+    {
+      "icon": "earth",
+       "url": "https://bitbee.com"
+    }
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
