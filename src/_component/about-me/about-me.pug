@@ -6,13 +6,13 @@
   var myTitle = "Self-Taught Person"
   var slogan = "I make the front-end world a better place every day."
   var achivement = {
-    title: 'achivement',
+    title: 'Achivement',
     content: `I've built a custom SEO CMS that boostedsearch result 
     position in Google's first place in tens of clients and their websites without
     any aditional effort and minimum or no training at all.`
   }
   var coolStuff = {
-    title: 'grab cool stuff',
+    title: 'Grab Cool-Stuff',
     buttonList: [
       {
         url: 'https://github.com/ShokadinuEU/my-CV',
@@ -41,7 +41,7 @@
   .about-me__avatar-wrapper
     img.about-me__avatar(src=imagePath)
   .about-me__full-name=myFullName
-  .about-me__full-title=myTitle
+  .about-me__title=myTitle
   .about-me__slogan=slogan
 
   .about-me__title=achivement.title
@@ -50,6 +50,6 @@
   .about-me__title=coolStuff.title
   .about-me__link-list
     each button in coolStuff.buttonList
-      a(href=button.url)
-        span=button.label
-        span(class='my-cv__icon--${button.icon}')
+      a.about-me__link(href=button.url)
+        span.about-me__link-description=button.label
+        span(class=`my-cv__icon--${button.icon}` )
