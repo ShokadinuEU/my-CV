@@ -1,0 +1,55 @@
+//- data comes here
+-
+  var header = '#about-me'
+  var imagePath = "asset/image/profile.picture.jpg"
+  var myFullName = "Timotei Dumitru"
+  var myTitle = "Self-Taught Person"
+  var slogan = "I make the front-end world a better place every day."
+  var achivement = {
+    title: 'achivement',
+    content: `I've built a custom SEO CMS that boostedsearch result 
+    position in Google's first place in tens of clients and their websites without
+    any aditional effort and minimum or no training at all.`
+  }
+  var coolStuff = {
+    title: 'grab cool stuff',
+    buttonList: [
+      {
+        url: 'https://github.com/ShokadinuEU/my-CV',
+        icon: 'github',
+        label: 'Click to visit the GitHub project source'
+      },
+      {
+        url: 'asset/doc/CONTRACTS.ONLY-resume.Timotei.Dumitru.docx',
+        icon: 'file-word',
+        label: 'Click to download the "one page" Microsoft Word version'
+      },
+      {
+        url: 'asset/doc/PERSONAL.STATEMENT-Timotei.Dumitru.docx',
+        icon: 'file-word',
+        label: 'Click to download Personal Statement Microsoft Word version'
+      }
+    ]
+  }
+
+
+//- the view comes here
+
+#about-me
+.about-me
+  .about-me__header=header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imagePath)
+  .about-me__full-name=myFullName
+  .about-me__full-title=myTitle
+  .about-me__slogan=slogan
+
+  .about-me__title=achivement.title
+  .about-me__content=achivement.content
+
+  .about-me__title=coolStuff.title
+  .about-me__link-list
+    each button in coolStuff.buttonList
+      a(href=button.url)
+        span=button.label
+        span(class='my-cv__icon--${button.icon}')
