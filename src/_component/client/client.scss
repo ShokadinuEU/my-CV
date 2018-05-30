@@ -3,26 +3,27 @@
   @extend %header;
 }
 
-.client__image {
-  // border: 0.2rem solid red;
-  margin: 0 auto;
-  width: 200px;
-  height: 900px;
-  background-image: url(asset/image/client/all-clients.jpg);
-
-  // &:nth-child(2){
-  //   background-position-y: -150px;
-  // }
-  // &:nth-child(3){
-  //   background-position-y: -300px;
-  // }
-  // &:nth-child(4){
-  //   background-position-y: -450px;
-  // }
-  // &:nth-child(5){
-  //   background-position-y: -600px;
-  // }
-  // &:nth-child(6){
-  //   background-position-y: -750px;
-  // }
+.client__image_one {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 369px;
+  height: 125px;
+  background-image: url(asset/image/client/my-cv.jpg);
+}
+.client__image_two {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 369px;
+  height: 125px;
+  background-image: url(asset/image/client/jr-dev-test.jpg);
+}
+.client__image_three {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 369px;
+  height: 125px;
+  background-image: url(asset/image/client/w3school.jpg);
 }

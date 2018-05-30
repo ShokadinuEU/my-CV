@@ -1,18 +1,17 @@
 -
-  var header= '#recent clients'
-  //- var clientList = [
-  //-   "/asset/image/client/argus.png",
-  //-   "/asset/image/client/chemist-direct.jpg",
-  //-   "/asset/image/client/direct-line-group.jpg",
-  //-   "/asset/image/client/rma-consulting.png",
-  //-   "/asset/image/client/sigla-romaris.png",
-  //-   "/asset/image/client/zeus-media.jpg"
-  //- ];
+  var header= '#recent projects'
 
 
 #client
 .client
   .client__header=header
-  //- .client__list
-  //-   each client in clientList
-  .client__image
+  .client__image_one
+    a(href='https://shokadinueu.github.io/my-CV/' target="_blank" alt="Link to My-CV project")
+
+  .client__image_two
+    a(href='https://shokadinueu.github.io/jr-web-dev-test/'
+    target="_blank" alt="Link to Jr Dev Test Project")
+
+  .client__image_three
+    a(href='https://github.com/ShokadinuEU/w3school_replica'
+    target="_blank" alt="Link to w3schools-replica Project")
